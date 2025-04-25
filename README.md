@@ -9,7 +9,6 @@
 ## ✨ Features
 
 - **Smart Formatting**: Automatically wraps Jira issue keys in quotes and separates them with commas.
-- **JQL-Ready Output**: Outputs the formatted list within a `key IN (...)` clause.
 - **User-Friendly Interface**: Simple and intuitive design for ease of use.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
