@@ -17,23 +17,32 @@
             <h1>concats</h1>
         </header>
         <main id="main-section">
-            <div id="input-section">
-                <label for="input">Copy issue IDs here:</label>
-                <textarea id="input" rows="10" cols="50"></textarea>
-            </div>
-            <div class="button-section">
-                <button id="linkedIssuesButton">issue in linkedIssues('')</button>
-                <button id="inListButton">IN list ('JIRA','JIRA2')</button>
-            </div>
-            <div id="result-section">
+            <section id="input-section">
+                <label for="input">Copy list of values here:</label>
+                <textarea id="input" rows="7" cols="50"></textarea>
+            </section>
+            <section class="button-section">
+                <button id="inListButton">IN ('Text 1','Text 2')</button>
+                <button id="linkedIssuesButton">issue in linkedIssues('Text 1') OR</button>
+                <div id="prefix-suffix-inputs">
+                    <label for="prefix">Prefix</label>
+                    <input type="text" id="prefix" />
+                    <label for="suffix">Suffix</label>
+                    <input type="text" id="suffix" />
+                    <label for="delimiter">Delimiter</label>
+                    <input type="text" id="delimiter" value="," />
+                </div>
+                <button id="customPrefixSuffix">Custom Prefix & Suffix</button>
+            </section>
+            <section id="result-section">
                 <label for="result">Result:</label>
-                <textarea id="result" rows="10" cols="50"></textarea>
-            </div>
+                <textarea id="result" rows="7" cols="50"></textarea>
+            </section>
 
-            <div class="button-section">
+            <section class="button-section">
                 <button id="copyButton">Copy</button>
                 <button id="clearButton">Clear</button>
-            </div>
+            </section>
         </main>
     </div>
 </body>

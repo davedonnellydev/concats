@@ -24,17 +24,16 @@ const issueInLinkedIssues = () => {
     }
     console.log(typeof inputArr[i]);
   }
-  resultBox.textContent = result;
+  resultBox.textContent = "(" + result + ")";
 };
 
 // function to concatenate all lines within inverted commas, separated by comma
 
 const inList = () => {
-  const inputBox = document.getElementById("input");
+  const inputValue = document.getElementById("input").value;
   const resultBox = document.getElementById("result");
-  const input = inputBox.value;
   const breakpoint = new RegExp(/[\r\n\s]/g);
-  const inputArr = input.split(breakpoint);
+  const inputArr = inputValue.split(breakpoint);
   let result = "";
 
   for (let i = 0; i < inputArr.length; i++) {
@@ -50,6 +49,35 @@ const inList = () => {
       }
     }
   }
+  resultBox.textContent = "IN (" + result + ")";
+};
+
+// function to concatenate all lines surrounded by custom prefix & suffix
+
+const customPrefixSuffix = () => {
+  const prefix = document.getElementById("prefix").value;
+  const suffix = document.getElementById("suffix").value;
+  const delimiter = document.getElementById("delimiter").value;
+  const inputValue = document.getElementById("input").value;
+  const resultBox = document.getElementById("result");
+  const breakpoint = new RegExp(/[\r\n\s]/g);
+  const inputArr = inputValue.split(breakpoint);
+  let result = "";
+
+  for (let i = 0; i < inputArr.length; i++) {
+    if (
+      inputArr[i] !== undefined &&
+      inputArr[i] !== null &&
+      inputArr[i] !== ""
+    ) {
+      if (i == inputArr.length -1) {
+        result = result + prefix + inputArr[i] + suffix;
+      } else {
+        result = result + prefix + inputArr[i] + suffix + delimiter;
+      }
+    }
+  }
+
   resultBox.textContent = result;
 };
 
@@ -72,5 +100,8 @@ document
   .getElementById("linkedIssuesButton")
   .addEventListener("click", issueInLinkedIssues);
 document.getElementById("inListButton").addEventListener("click", inList);
+document
+  .getElementById("customPrefixSuffix")
+  .addEventListener("click", customPrefixSuffix);
 document.getElementById("copyButton").addEventListener("click", copy);
 document.getElementById("clearButton").addEventListener("click", clear);
