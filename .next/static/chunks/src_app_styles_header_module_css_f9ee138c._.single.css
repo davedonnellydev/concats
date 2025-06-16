@@ -1,0 +1,15 @@
+/* [project]/src/app/styles/header.module.css [app-client] (css) */
+.header-module__zXB_yG__header {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.header-module__zXB_yG__h1 {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=src_app_styles_header_module_css_f9ee138c._.single.css.map*/

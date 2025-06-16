@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.h1 {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
