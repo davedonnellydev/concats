@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/styles/concatenations.module.css"],"sourcesContent":[".inputSection,\n.resultSection,\n.controlsSection {\n  display: flex;\n  flex-direction: column;\n  margin: 10px 0;\n  justify-content: center;\n  align-items: center;\n}\n\n.optionSection {\n  display: flex;\n  align-items: start;\n}\n\n.preset {\n  display: grid;\n  padding: 0 1.1em;\n  margin: 5px;\n  border: 2px solid var(--primary-color);\n}\n\n.custom {\n  display: grid;\n  padding: 0 1.1em;\n  margin: 5px;\n  border: 2px solid var(--primary-color);\n}\n\n.customInputs {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 25px;\n}\n\n.customInputs input {\n  max-width: 50px;\n}\n\n.customInputs label,\n.customInputs input {\n  margin: 5px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;;AAKA;;;;;;;AAcA;;;;;;AAMA;;;;AAIA"}}]
-}
