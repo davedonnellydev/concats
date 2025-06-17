@@ -2,7 +2,7 @@
 
 **concats** is a lightweight JIRA issue key concatenator built with React and Next.js. It allows users to input multiple JIRA issue keys and outputs them as a comma-separated string, facilitating easy sharing and management of issue lists.
 
-🔗 Live Demo: [https://dave-donnelly-concats.netlify.app/](https://dave-donnelly-concats.netlify.app/)
+🔗 Live Demo: [https://davedonnellydev.github.io/concats/](https://davedonnellydev.github.io/concats/)
 
 ---
 
