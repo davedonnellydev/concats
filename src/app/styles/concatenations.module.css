@@ -1,0 +1,43 @@
+.inputSection,
+.resultSection,
+.controlsSection {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionSection {
+  display: flex;
+  align-items: start;
+}
+
+.preset {
+  display: grid;
+  padding: 0 1.1em;
+  margin: 5px;
+  border: 2px solid var(--primary-color);
+}
+
+.custom {
+  display: grid;
+  padding: 0 1.1em;
+  margin: 5px;
+  border: 2px solid var(--primary-color);
+}
+
+.customInputs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 25px;
+}
+
+.customInputs input {
+  max-width: 50px;
+}
+
+.customInputs label,
+.customInputs input {
+  margin: 5px;
+}

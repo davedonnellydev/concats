@@ -1,0 +1,49 @@
+.page {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.main {
+  position: relative;
+  height: fit-content;
+  width: auto;
+}
+
+.main h1 {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+.main textarea {
+  background-color: var(--teriary-color);
+  color: var(--background-color);
+  font-weight: 300;
+  border-radius: 8px;
+}
+
+.main label {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.main button {
+  display: inline-block;
+  min-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+  background-color: var(--secondary-color-light);
+  color: var(--background-color);
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+}
