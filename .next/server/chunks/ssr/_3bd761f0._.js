@@ -22,13 +22,8 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/layout.js [ap
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
-  "button-section": "page-module___8aEwW__button-section",
-  "input-section": "page-module___8aEwW__input-section",
   "main": "page-module___8aEwW__main",
-  "main-section": "page-module___8aEwW__main-section",
   "page": "page-module___8aEwW__page",
-  "prefix-suffix-inputs": "page-module___8aEwW__prefix-suffix-inputs",
-  "result-section": "page-module___8aEwW__result-section",
 });
 }}),
 "[project]/src/app/styles/header.module.css [app-rsc] (css module)": ((__turbopack_context__) => {

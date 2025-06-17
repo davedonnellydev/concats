@@ -1,12 +1,5 @@
 /* [project]/src/app/page.module.css [app-client] (css) */
 .page-module___8aEwW__page {
-  --background-color: #333745;
-  --primary-color: #c7efcf;
-  --secondary-color: #fe5f55;
-  --secondary-color-light: #f79b95;
-  --teriary-color: #d8d8dd;
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Barrio", sans-serif;
   font-family: var(--primary-font);
   color: var(--primary-color);
   background-color: var(--background-color);
@@ -48,35 +41,12 @@
   display: inline-block;
 }
 
-.page-module___8aEwW__main, #page-module___8aEwW__input-section, #page-module___8aEwW__result-section {
+.page-module___8aEwW__main {
   flex-direction: column;
-  margin: 10px 0;
-  display: flex;
-}
-
-.page-module___8aEwW__button-section {
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  display: flex;
-}
-
-#page-module___8aEwW__prefix-suffix-inputs {
-  border: 2px solid var(--primary-color);
-  grid-template-columns: 2fr 1fr;
-  margin-top: 25px;
-  display: grid;
-}
-
-#page-module___8aEwW__prefix-suffix-inputs input {
-  max-width: 50px;
-}
-
-#page-module___8aEwW__prefix-suffix-inputs label, #page-module___8aEwW__prefix-suffix-inputs input {
-  margin: 5px;
-}
-
-#page-module___8aEwW__main-section {
   margin: 0 1rem;
+  display: flex;
 }
 
 /*# sourceMappingURL=src_app_page_module_css_f9ee138c._.single.css.map*/

@@ -1,5 +1,19 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
 
+"[project]/src/app/styles/concatenations.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "controlsSection": "concatenations-module__Q_yQpW__controlsSection",
+  "custom": "concatenations-module__Q_yQpW__custom",
+  "customInputs": "concatenations-module__Q_yQpW__customInputs",
+  "inputSection": "concatenations-module__Q_yQpW__inputSection",
+  "optionSection": "concatenations-module__Q_yQpW__optionSection",
+  "preset": "concatenations-module__Q_yQpW__preset",
+  "resultSection": "concatenations-module__Q_yQpW__resultSection",
+});
+}}),
 "[project]/src/app/components/concatenations.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -10,9 +24,11 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/styles/concatenations.module.css [app-client] (css module)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 const Concatenations = ()=>{
     _s();
@@ -21,6 +37,7 @@ const Concatenations = ()=>{
     const [prefix, setPrefix] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [suffix, setSuffix] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [delimiter, setDelimiter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(",");
+    const inputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     // function to change all jira issues into multiples of the sentance 'issue in linkedIssues([ISSUE ID])'
     const issueInLinkedIssues = ()=>{
         const regexJira = new RegExp(/[^A-Za-z0-9\r\n\-]/g);
@@ -77,167 +94,200 @@ const Concatenations = ()=>{
     const clear = ()=>{
         setInputValue("");
         setResultValue("");
+        inputRef.current.focus();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].Fragment, {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                id: "input-section",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputSection,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         htmlFor: "input",
                         children: "Copy list of values here:"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 94,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                         id: "input",
                         rows: "7",
-                        cols: "50",
+                        cols: "100",
                         value: inputValue,
-                        onChange: (e)=>setInputValue(e.target.value)
+                        onChange: (e)=>setInputValue(e.target.value),
+                        ref: inputRef
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 95,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/concatenations.jsx",
-                lineNumber: 93,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                id: "option-section",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].optionSection,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        id: "inListButton",
-                        onClick: inList,
-                        children: "IN ('Text 1','Text 2')"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 104,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        id: "linkedIssuesButton",
-                        onClick: issueInLinkedIssues,
-                        children: "issue in linkedIssues('Text 1') OR"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 107,
-                        columnNumber: 9
-                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        id: "prefix-suffix-inputs",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].preset,
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                htmlFor: "prefix",
-                                children: "Prefix"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: "Preset options"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/concatenations.jsx",
+                                lineNumber: 110,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                id: "inListButton",
+                                onClick: inList,
+                                children: "IN ('Text 1','Text 2')"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/concatenations.jsx",
                                 lineNumber: 111,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                id: "prefix",
-                                value: prefix,
-                                onChange: (e)=>setPrefix(e.target.value)
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                id: "linkedIssuesButton",
+                                onClick: issueInLinkedIssues,
+                                children: "issue in linkedIssues('Text 1') OR"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/concatenations.jsx",
-                                lineNumber: 112,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                htmlFor: "suffix",
-                                children: "Suffix"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/concatenations.jsx",
-                                lineNumber: 118,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                id: "suffix",
-                                value: suffix,
-                                onChange: (e)=>setSuffix(e.target.value)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/concatenations.jsx",
-                                lineNumber: 119,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                htmlFor: "delimiter",
-                                children: "Delimiter"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/concatenations.jsx",
-                                lineNumber: 125,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                id: "delimiter",
-                                defaultValue: ",",
-                                value: delimiter,
-                                onChange: (e)=>setDelimiter(e.target.value)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/concatenations.jsx",
-                                lineNumber: 126,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 110,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        id: "customPrefixSuffix",
-                        onClick: customPrefixSuffix,
-                        children: "Custom Prefix & Suffix"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].custom,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: "Custom options"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/concatenations.jsx",
+                                lineNumber: 119,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].customInputs,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "prefix",
+                                        children: "Prefix"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 121,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "prefix",
+                                        value: prefix,
+                                        onChange: (e)=>setPrefix(e.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 122,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "suffix",
+                                        children: "Suffix"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 128,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "suffix",
+                                        value: suffix,
+                                        onChange: (e)=>setSuffix(e.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 129,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "delimiter",
+                                        children: "Delimiter"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 135,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "delimiter",
+                                        value: delimiter,
+                                        onChange: (e)=>setDelimiter(e.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/concatenations.jsx",
+                                        lineNumber: 136,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/concatenations.jsx",
+                                lineNumber: 120,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                id: "customPrefixSuffix",
+                                onClick: customPrefixSuffix,
+                                children: "Custom Prefix & Suffix"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/concatenations.jsx",
+                                lineNumber: 143,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 134,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/concatenations.jsx",
-                lineNumber: 103,
+                lineNumber: 108,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                id: "result-section",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].resultSection,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         htmlFor: "result",
                         children: "Result:"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 139,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                         id: "result",
                         rows: "7",
-                        cols: "50",
+                        cols: "100",
                         value: resultValue,
                         readOnly: true
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 140,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/concatenations.jsx",
-                lineNumber: 138,
+                lineNumber: 148,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                id: "controls-section",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$concatenations$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].controlsSection,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         id: "copyButton",
@@ -245,7 +295,7 @@ const Concatenations = ()=>{
                         children: "Copy"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 149,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -254,23 +304,23 @@ const Concatenations = ()=>{
                         children: "Clear"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/concatenations.jsx",
-                        lineNumber: 152,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/concatenations.jsx",
-                lineNumber: 148,
+                lineNumber: 158,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/concatenations.jsx",
-        lineNumber: 92,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 };
-_s(Concatenations, "quy16cWW30TgG35UnXBV4a+YRvs=");
+_s(Concatenations, "p3dJM1LKspbmZf1vMAYg7zGi2Dc=");
 _c = Concatenations;
 const __TURBOPACK__default__export__ = Concatenations;
 var _c;
@@ -501,4 +551,4 @@ if ("TURBOPACK compile-time falsy", 0) {
 }}),
 }]);
 
-//# sourceMappingURL=_ad3fd67c._.js.map
+//# sourceMappingURL=_92de036e._.js.map

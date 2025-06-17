@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import styles from "../styles/concatenations.module.css";
 
 const Concatenations = () => {
   const [inputValue, setInputValue] = useState("");
@@ -9,21 +10,7 @@ const Concatenations = () => {
   const [suffix, setSuffix] = useState("");
   const [delimiter, setDelimiter] = useState(",");
 
-  const handleChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
-  const updatePrefix = (e) => {
-    setPrefix(e.target.value);
-  };
-
-  const updateSuffix = (e) => {
-    setSuffix(e.target.value);
-  };
-
-  const updateDelimiter = (e) => {
-    setDelimiter(e.target.value);
-  };
+  const inputRef = useRef(null);
 
   // function to change all jira issues into multiples of the sentance 'issue in linkedIssues([ISSUE ID])'
 
@@ -102,66 +89,73 @@ const Concatenations = () => {
   const clear = () => {
     setInputValue("");
     setResultValue("");
+    inputRef.current.focus();
   };
 
   return (
     <React.Fragment>
-      <section id="input-section">
+      <section className={styles.inputSection}>
         <label htmlFor="input">Copy list of values here:</label>
         <textarea
           id="input"
           rows="7"
-          cols="50"
+          cols="100"
           value={inputValue}
-          onChange={handleChange}
+          onChange={(e) => setInputValue(e.target.value)}
+          ref={inputRef}
         ></textarea>
       </section>
-      <section className="option-section">
-        <button id="inListButton" onClick={inList}>
-          IN ('Text 1','Text 2')
-        </button>
-        <button id="linkedIssuesButton" onClick={issueInLinkedIssues}>
-          issue in linkedIssues('Text 1') OR
-        </button>
-        <div id="prefix-suffix-inputs">
-          <label htmlFor="prefix">Prefix</label>
-          <input
-            type="text"
-            id="prefix"
-            value={prefix}
-            onChange={updatePrefix}
-          />
-          <label htmlFor="suffix">Suffix</label>
-          <input
-            type="text"
-            id="suffix"
-            value={suffix}
-            onChange={updateSuffix}
-          />
-          <label htmlFor="delimiter">Delimiter</label>
-          <input
-            type="text"
-            id="delimiter"
-            defaultValue=","
-            value={delimiter}
-            onChange={updateDelimiter}
-          />
+      <section className={styles.optionSection}>
+        <div className={styles.preset}>
+          <h2>Preset options</h2>
+          <button id="inListButton" onClick={inList}>
+            IN ('Text 1','Text 2')
+          </button>
+          <button id="linkedIssuesButton" onClick={issueInLinkedIssues}>
+            issue in linkedIssues('Text 1') OR
+          </button>
         </div>
-        <button id="customPrefixSuffix" onClick={customPrefixSuffix}>
-          Custom Prefix & Suffix
-        </button>
+        <div className={styles.custom}>
+          <h2>Custom options</h2>
+          <div className={styles.customInputs}>
+            <label htmlFor="prefix">Prefix</label>
+            <input
+              type="text"
+              id="prefix"
+              value={prefix}
+              onChange={(e) => setPrefix(e.target.value)}
+            />
+            <label htmlFor="suffix">Suffix</label>
+            <input
+              type="text"
+              id="suffix"
+              value={suffix}
+              onChange={(e) => setSuffix(e.target.value)}
+            />
+            <label htmlFor="delimiter">Delimiter</label>
+            <input
+              type="text"
+              id="delimiter"
+              value={delimiter}
+              onChange={(e) => setDelimiter(e.target.value)}
+            />
+          </div>
+          <button id="customPrefixSuffix" onClick={customPrefixSuffix}>
+            Custom Prefix & Suffix
+          </button>
+        </div>
       </section>
-      <section id="result-section">
+      <section className={styles.resultSection}>
         <label htmlFor="result">Result:</label>
         <textarea
           id="result"
           rows="7"
-          cols="50"
+          cols="100"
           value={resultValue}
           readOnly
         ></textarea>
       </section>
-      <section className="controls-section">
+      <section className={styles.controlsSection}>
         <button id="copyButton" onClick={copy}>
           Copy
         </button>

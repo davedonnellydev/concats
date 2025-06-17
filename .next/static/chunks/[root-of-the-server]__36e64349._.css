@@ -122,14 +122,19 @@
 
 /* [project]/src/app/globals.css [app-client] (css) */
 :root {
-  --background: #fff;
-  --foreground: #171717;
+  --background-color: #333745;
+  --primary-color: #c7efcf;
+  --secondary-color: #fe5f55;
+  --secondary-color-light: #f79b95;
+  --teriary-color: #d8d8dd;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Barrio", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-color: #0a0a0a;
+    --primary-color: #ededed;
   }
 }
 
@@ -139,8 +144,8 @@ html, body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--primary-color);
+  background: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Arial, Helvetica, sans-serif;

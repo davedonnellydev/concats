@@ -1,12 +1,23 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ------- colours ------- */
+  --background-color: #333745ff;
+  --primary-color: #c7efcfff;
+  --secondary-color: #fe5f55ff;
+  --secondary-color-light: #f79b95;
+  --teriary-color: #d8d8dd;
+
+  /* palette at https://coolors.co/333745-e63462-fe5f55-c7efcf-eef5db */
+
+  /* ------- fonts ------- */
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Barrio", sans-serif;
+  /* --------------------- */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-color: #0a0a0a;
+    --primary-color: #ededed;
   }
 }
 
@@ -17,8 +28,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--primary-color);
+  background: var(--background-color);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
