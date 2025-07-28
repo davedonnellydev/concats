@@ -10,10 +10,8 @@
   width: auto;
 }
 
-.main h1 {
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  margin-bottom: 0;
+.main h2 {
+  font-size: 1.25rem;
 }
 
 .main textarea {
